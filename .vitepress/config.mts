@@ -10,10 +10,12 @@ export default defineConfig({
     siteTitle: 'LCY Lab',
     nav: [
       { text: '首页', link: '/' },
-      { text: '学习笔记', link: '/notes/' },
+      { text: '归档', link: '/archive' },
+      { text: '分类', link: '/notes/' },
       { text: '项目记录', link: '/projects/' },
+      { text: '标签', link: '/tags' },
       { text: '关于我', link: '/about' },
-      { text: 'GitHub', link: 'https://github.com/lcylab/lcylab.github.io' },
+      { text: 'GitHub', link: 'https://github.com/LcyLab/LcyLab.github.io' },
     ],
     sidebar: {
       '/notes/': [
@@ -36,7 +38,7 @@ export default defineConfig({
       ],
     },
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/lcylab' },
+      { icon: 'github', link: 'https://github.com/LcyLab' },
     ],
     search: {
       provider: 'local',
