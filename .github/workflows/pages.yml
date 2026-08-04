@@ -25,6 +25,9 @@ jobs:
         run: |
           git clone --depth 1 https://github.com/blinkfox/hexo-theme-matery.git themes/matery
           cp theme-overrides/matery/_config.yml themes/matery/_config.yml
+          rm -f themes/matery/source/medias/reward/wechat.png themes/matery/source/medias/reward/alipay.jpg
+          mkdir -p themes/matery/layout/_partial
+          cp theme-overrides/matery/layout/_partial/footer.ejs themes/matery/layout/_partial/footer.ejs
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
