@@ -1,0 +1,70 @@
+/* LCY Lab custom styles. */
+
+.lcy-site-stats {
+    margin: 1.25rem auto 0.75rem;
+}
+
+.lcy-site-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+
+.lcy-site-stat {
+    min-height: 7.5rem;
+    padding: 1rem 0.75rem;
+    border: 1px solid rgba(66, 185, 131, 0.16);
+    border-radius: 0.75rem;
+    background: rgba(66, 185, 131, 0.06);
+    color: inherit;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+a.lcy-site-stat:hover {
+    color: inherit;
+    box-shadow: 0 0.35rem 1rem rgba(66, 185, 131, 0.16);
+    transform: translateY(-2px);
+}
+
+.lcy-site-stat-icon,
+.lcy-site-stat-number,
+.lcy-site-stat-label,
+.lcy-site-stat-meta {
+    display: block;
+}
+
+.lcy-site-stat-icon {
+    color: #42b983;
+    font-size: 1.2rem;
+}
+
+.lcy-site-stat-number {
+    margin-top: 0.2rem;
+    color: #42b983;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.lcy-site-stat-label {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.lcy-site-stat-meta {
+    margin-top: 0.25rem;
+    color: #888;
+    font-size: 0.78rem;
+}
+
+body.DarkMode .lcy-site-stat-label,
+body.DarkMode .lcy-site-stat-meta {
+    color: rgba(255, 255, 255, 0.65);
+}
+
+@media (max-width: 600px) {
+    .lcy-site-stats-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}

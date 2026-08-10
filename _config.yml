@@ -70,6 +70,13 @@ default_category: uncategorized
 category_map:
 tag_map:
 
+# Local search index consumed by Matery's search dialog.
+search:
+  path: search.xml
+  field: post
+  content: true
+  format: striptags
+
 # Metadata elements
 ## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
 meta_generator: true

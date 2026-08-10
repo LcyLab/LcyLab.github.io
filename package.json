@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "build": "hexo generate",
+    "check:site": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/validate-site-features.ps1",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
     "server": "hexo server"

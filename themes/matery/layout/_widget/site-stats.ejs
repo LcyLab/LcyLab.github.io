@@ -1,0 +1,63 @@
+<div class="lcy-site-stats" data-aos="fade-up">
+    <div class="title center-align">
+        <i class="fas fa-chart-line"></i>&nbsp;&nbsp;站点概览
+    </div>
+    <div class="lcy-site-stats-grid">
+        <a class="lcy-site-stat" href="<%- url_for('/') %>">
+            <span class="lcy-site-stat-icon"><i class="fas fa-file-alt"></i></span>
+            <span class="lcy-site-stat-number"><%= site.posts.length %></span>
+            <span class="lcy-site-stat-label">篇文章</span>
+        </a>
+        <a class="lcy-site-stat" href="<%- url_for('/categories') %>">
+            <span class="lcy-site-stat-icon"><i class="fas fa-bookmark"></i></span>
+            <span class="lcy-site-stat-number"><%= site.categories.length %></span>
+            <span class="lcy-site-stat-label">个分类</span>
+        </a>
+        <a class="lcy-site-stat" href="<%- url_for('/tags') %>">
+            <span class="lcy-site-stat-icon"><i class="fas fa-tags"></i></span>
+            <span class="lcy-site-stat-number"><%= site.tags.length %></span>
+            <span class="lcy-site-stat-label">个标签</span>
+        </a>
+        <div class="lcy-site-stat">
+            <span class="lcy-site-stat-icon"><i class="far fa-eye"></i></span>
+            <span class="lcy-site-stat-number" data-stat-source="site-pv">加载中</span>
+            <span class="lcy-site-stat-label">总访问量</span>
+            <span class="lcy-site-stat-meta">访客 <span data-stat-source="site-uv">加载中</span></span>
+        </div>
+    </div>
+</div>
+
+<script>
+    (function () {
+        if (/^(localhost|127\.0\.0\.1|::1)$/.test(window.location.hostname)) {
+            document.querySelectorAll('[data-stat-source]').forEach(function (target) {
+                target.textContent = '正式站点统计';
+            });
+            return;
+        }
+
+        function syncSiteStats() {
+            var sitePv = document.getElementById('busuanzi_value_site_pv');
+            var siteUv = document.getElementById('busuanzi_value_site_uv');
+            var pvValue = sitePv && sitePv.textContent.trim();
+            var uvValue = siteUv && siteUv.textContent.trim();
+
+            if (pvValue) {
+                document.querySelectorAll('[data-stat-source="site-pv"]').forEach(function (target) {
+                    target.textContent = pvValue;
+                });
+            }
+            if (uvValue) {
+                document.querySelectorAll('[data-stat-source="site-uv"]').forEach(function (target) {
+                    target.textContent = uvValue;
+                });
+            }
+        }
+
+        var syncTimer = window.setInterval(syncSiteStats, 500);
+        window.addEventListener('load', syncSiteStats);
+        window.setTimeout(function () {
+            window.clearInterval(syncTimer);
+        }, 10000);
+    })();
+</script>

@@ -1,6 +1,7 @@
 ---
 title: LCY Lab 站点搭建记录
 date: 2026-08-04 21:00:00
+top: true
 categories:
   - 项目记录
 tags:

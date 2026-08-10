@@ -2,6 +2,7 @@
 title: 工程代码中的数据流与失败条件
 description: 从一个小函数开始，让输入、输出和失败路径都能被清楚追踪。
 date: 2026-08-04 20:00:00
+top: true
 categories:
   - C++
 tags:
