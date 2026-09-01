@@ -1,0 +1,227 @@
+# LCY Lab site configuration for Redefine 2.9.0.
+
+info:
+  title: LCY Lab
+  subtitle: 电磁仿真、计算几何、C++、Qt 与 OpenCascade 学习记录
+  author: LcyLab
+  url: https://lcylab.github.io
+
+defaults:
+  favicon: /images/redefine-favicon.svg
+  logo:
+  avatar: /images/redefine-avatar.svg
+
+colors:
+  primary: '#2563EB'
+  secondary: '#0F172A'
+  default_mode: light
+
+global:
+  content_max_width: 1100px
+  sidebar_width: 230px
+  hover:
+    shadow: true
+    scale: false
+  scroll_progress:
+    bar: true
+    percentage: true
+  website_counter:
+    url: https://cn.vercount.one/js
+    enable: true
+    site_pv: true
+    site_uv: true
+    post_pv: true
+  single_page: true
+  preloader:
+    enable: false
+  side_tools:
+    gear_rotation: false
+    auto_expand: false
+  open_graph:
+    enable: true
+    image: /images/redefine-og.webp
+    description: 电磁仿真、计算几何、C++、Qt 与 OpenCascade 学习记录
+  google_analytics:
+    enable: false
+    id:
+
+home_banner:
+  enable: true
+  style: fixed
+  image:
+    light: /images/wallhaven-wqery6-light.webp
+    dark: /images/wallhaven-wqery6-dark.webp
+  title: LCY Lab
+  subtitle:
+    text:
+      - 技术学习与研究笔记
+      - 电磁仿真 · 计算几何 · C++ · Qt
+    hitokoto:
+      enable: false
+      show_author: false
+      api: https://v1.hitokoto.cn
+    typing_speed: 100
+    backing_speed: 80
+    starting_delay: 500
+    backing_delay: 1500
+    loop: true
+    smart_backspace: true
+  text_color:
+    light: '#fff'
+    dark: '#e2e8f0'
+  text_style:
+    title_size: 2.8rem
+    subtitle_size: 1.5rem
+    line_height: 1.2
+  custom_font:
+    enable: false
+    family:
+    url:
+  social_links:
+    enable: false
+    style: default
+    links:
+      - icon: github
+        url:
+      - icon: twitter
+        url:
+      - icon: email
+        url:
+      - icon: telegram
+        url:
+      - icon: /images/custom-icon.svg
+        url:
+    qrs:
+      - icon: weixin
+        qr:
+      - icon: /images/custom-icon.svg
+        qr:
+
+navbar:
+  auto_hide: false
+  color:
+    left: '#0F172A'
+    right: '#2563EB'
+    transparency: 95
+  width:
+    home: 1200px
+    pages: 1000px
+  links:
+    学习笔记:
+      path: /notes/
+      icon: fa-solid fa-book-open
+    分类:
+      path: /categories/
+      icon: fa-solid fa-folder
+    标签:
+      path: /tags/
+      icon: fa-solid fa-tags
+    归档:
+      path: /archives/
+      icon: fa-solid fa-box-archive
+    项目记录:
+      path: /projects/
+      icon: fa-solid fa-code-branch
+    GitHub:
+      path: https://github.com/LcyLab
+      icon: github
+  search:
+    enable: true
+    preload: true
+
+home:
+  sidebar:
+    enable: true
+    position: left
+    first_item: menu
+    announcement: 技术笔记持续整理中
+    show_on_mobile: true
+    links:
+      分类:
+        path: /categories/
+        icon: fa-solid fa-folder
+      标签:
+        path: /tags/
+        icon: fa-solid fa-tags
+      归档:
+        path: /archives/
+        icon: fa-solid fa-box-archive
+      项目记录:
+        path: /projects/
+        icon: fa-solid fa-code-branch
+  article_date_format: YYYY-MM-DD
+  excerpt_length: 200
+  categories:
+    enable: true
+    limit: 3
+  tags:
+    enable: true
+    limit: 3
+
+articles:
+  style:
+    font_size: 16px
+    line_height: 1.75
+    image_border_radius: 10px
+    image_alignment: center
+    image_caption: false
+    link_icon: true
+    delete_mask: false
+    title_alignment: left
+  word_count:
+    enable: true
+    count: true
+    min2read: true
+  author_label:
+    enable: false
+  code_block:
+    copy: true
+    style: simple
+    highlight_theme:
+      light: github
+      dark: vs2015
+  toc:
+    enable: true
+    max_depth: 3
+    number: false
+    expand: true
+    init_open: true
+  copyright:
+    enable: false
+  lazyload: true
+  pangu_js: false
+  recommendation:
+    enable: false
+
+comment:
+  enable: false
+
+footer:
+  runtime: true
+  icon:
+  start: 2026/08/04 00:00:00
+  statistics: true
+  customize: LCY Lab
+  icp:
+    enable: false
+
+inject:
+  enable: false
+
+plugins:
+  feed:
+    enable: false
+  aplayer:
+    enable: false
+  mermaid:
+    enable: false
+
+page_templates:
+  friends_column: 2
+  tags_style: blur
+  masonry:
+    batch_size: 12
+    initial_batch_size: 24
+
+cdn:
+  enable: false

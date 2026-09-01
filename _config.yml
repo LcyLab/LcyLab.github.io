@@ -43,6 +43,9 @@ filename_case: 0
 render_drafts: false
 post_asset_folder: false
 relative_link: false
+marked:
+  prependRoot: false
+  postAsset: false
 future: true
 syntax_highlighter: highlight.js
 highlight:
@@ -70,12 +73,21 @@ default_category: uncategorized
 category_map:
 tag_map:
 
-# Local search index consumed by Matery's search dialog.
+# Local search index consumed by Redefine's search dialog.
 search:
   path: search.xml
   field: post
   content: true
   format: striptags
+
+# MathJax formulas are enabled per article through `mathjax: true`.
+mathjax:
+  tags: none
+  single_dollars: true
+  cjk_width: 0.9
+  normal_width: 0.6
+  append_css: true
+  every_page: false
 
 # Metadata elements
 ## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
@@ -104,7 +116,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: matery
+theme: redefine
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment

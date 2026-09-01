@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape by Victor Gasia -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   version="1.1"
+   width="522"
+   height="522"
+   id="charge">
+  <title
+     id="titre">Electric field of a point charge</title>
+  <desc
+     id="description">Crée par Victor GASIA 2012 à partir d'un travail original de Wikimedia</desc>
+  <metadata
+     id="metadata">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Electric field of a point charge</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs" />
+  <defs
+     id="defs7">
+    <linearGradient
+       id="linearGradient4861">
+      <stop
+         id="stop4863"
+         style="stop-color:#ffffff;stop-opacity:1"
+         offset="0" />
+      <stop
+         id="stop4865"
+         style="stop-color:#ff0000;stop-opacity:1"
+         offset="1" />
+    </linearGradient>
+    <radialGradient
+       cx="-80.890335"
+       cy="-124.93681"
+       r="300"
+       fx="-80.890335"
+       fy="-124.93681"
+       id="radialGradient4893"
+       xlink:href="#linearGradient4861"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <path
+     d="m 29.50489,260.90393 462.99023,0"
+     id="path3838"
+     style="fill:#ff0000;stroke:#ff0000;stroke-width:2;stroke-opacity:1" />
+  <path
+     d="M 461.25739,144.72264 60.86891,376.55783"
+     id="path3922"
+     style="fill:#ff0000;stroke:#ff0000;stroke-width:2;stroke-opacity:1" />
+  <path
+     d="M 376.3484,60.380441 145.53343,461.22235"
+     id="path3934"
+     style="fill:#ff0000;stroke:#ff0000;stroke-width:2;stroke-opacity:1" />
+  <path
+     d="m 261.18733,29.788279 0,462.423441"
+     id="path3946"
+     style="fill:#ff0000;stroke:#ff0000;stroke-width:2;stroke-opacity:1" />
+  <path
+     d="M 145.4801,60.674739 376.84123,461.22235"
+     id="path3958"
+     style="fill:#ff0000;stroke:#ff0000;stroke-width:2;stroke-opacity:1" />
+  <path
+     d="m 61.17395,144.836 400.3318,231.72183"
+     id="path3970"
+     style="fill:#ff0000;stroke:#ff0000;stroke-width:2;stroke-opacity:1" />
+  <path
+     d="m 269.1636,109.96467 -16.08424,0 8.04212,-35.489891 z"
+     id="path3962"
+     style="color:#000000;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:#ff0000;stroke-width:1.99594057;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+  <path
+     d="m 342.42808,135.01709 -13.92936,-8.04212 24.70962,-26.71409 z"
+     id="path3962-5"
+     style="color:#000000;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:#ff0000;stroke-width:1.99594057;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+  <path
+     d="M 192.61066,126.29482 178.6813,134.33694 167.90104,99.580739 z"
+     id="path3962-0"
+     style="color:#000000;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:#ff0000;stroke-width:1.99594057;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+  <path
+     d="m 134.82465,177.96689 -8.04212,13.92936 -26.71409,-24.70963 z"
+     id="path3962-8"
+     style="color:#000000;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:#ff0000;stroke-width:1.99594069;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+  <path
+     d="m 394.32686,192.57639 -8.04212,-13.92935 34.75621,-10.78027 z"
+     id="path3962-1"
+     style="color:#000000;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:#ff0000;stroke-width:1.99594069;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+  <path
+     d="m 408.89847,269.12932 0,-16.08424 35.48988,8.04212 z"
+     id="path3962-2"
+     style="color:#000000;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:#ff0000;stroke-width:1.99594057;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+  <path
+     d="m 110.62391,252.59166 0,16.08424 -35.489883,-8.04212 z"
+     id="path3962-7"
+     style="color:#000000;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:#ff0000;stroke-width:1.99594057;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+  <path
+     d="m 127.68939,328.69116 8.04212,13.92936 -34.75621,10.78026 z"
+     id="path3962-87"
+     style="color:#000000;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:#ff0000;stroke-width:1.99594057;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+  <path
+     d="m 253.07936,408.8642 16.08424,0 -8.04212,35.48988 z"
+     id="path3962-17"
+     style="color:#000000;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:#ff0000;stroke-width:1.99594057;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+  <path
+     d="m 328.04529,393.15901 13.92935,-8.04212 10.78027,34.75621 z"
+     id="path3962-4"
+     style="color:#000000;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:#ff0000;stroke-width:1.99594069;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+  <path
+     d="m 179.58817,385.79704 13.92935,8.04212 -24.70962,26.71409 z"
+     id="path3962-9"
+     style="color:#000000;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:#ff0000;stroke-width:1.99594069;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+  <path
+     d="m 385.60459,341.94039 8.04212,-13.92936 26.71409,24.70962 z"
+     id="path3962-83"
+     style="color:#000000;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:#ff0000;stroke-width:1.99594057;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+  <circle
+     cx="0"
+     cy="0"
+     r="300"
+     transform="matrix(0.09088272,0,0,0.09088272,261.18733,260.90393)"
+     id="circle3764"
+     style="fill:url(#radialGradient4893);fill-opacity:1;stroke:none" />
+  <path
+     d="m 242.15129,260.99218 37.69743,0"
+     id="path3838-4"
+     style="fill:none;stroke:#ffffff;stroke-width:7.9000001;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+  <path
+     d="m 261.01526,242.17436 0,37.65128"
+     id="path3946-7"
+     style="fill:none;stroke:#ffffff;stroke-width:7.9000001;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+</svg>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="384" height="560" font-family="sans-serif" font-size="12" font-weight="bold" text-anchor="middle">
+  <defs>
+    <marker id="a" markerHeight="1" markerWidth="1" orient="auto-start-reverse" overflow="visible" preserveAspectRatio="xMidYMid" viewBox="0 0 1 1">
+      <path fill="context-stroke" fill-rule="evenodd" d="M-1.4-2.8 6.3 0l-7.7 2.8C0 1.169 0-1.162-1.4-2.8"/>
+    </marker>
+  </defs>
+  <g fill="none" stroke-width="4">
+    <g stroke="red" marker-end="url(#a)">
+      <path d="m34.806 46.615 88.257.62153"/>
+      <path d="M36.049 93.23c37.105.20718 60.171.41436 88.257.62153"/>
+      <path d="m34.806 141.71 88.257.62153"/>
+    </g>
+    <ellipse cx="93.851" cy="94.473" stroke="#000" rx="36.049" ry="67.747"/>
+  </g>
+  <g id="b" stroke-width="4">
+    <g fill="none">
+      <g stroke="red" marker-end="url(#a)">
+        <path d="m221.31 36.919 91.941.37242"/>
+        <path d="M221.32 58.623h91.931"/>
+        <path d="M221.33 82.83h92.232"/>
+        <path d="m221.34 105.21 91.911.45505"/>
+        <path d="m221.35 128.22 91.902.44185"/>
+        <path d="M221.36 152.55h93.448"/>
+      </g>
+      <ellipse cx="283.42" cy="92.608" stroke="#000" rx="36.049" ry="68.99"/>
+    </g>
+    <path stroke="red" d="m252.06 37.044 15.217.06164M245.89 58.576l13.619.09591M238.64 82.773l16.263.11453M241.06 105.15l15.155.10673M241.5 128.15l18.012.12685M252.27 152.47l23.279.16394"/>
+  </g>
+  <use xlink:href="#b" transform="translate(-1.758 177.11)"/>
+  <use xlink:href="#b" transform="translate(-.87898 352.47)"/>
+  <g stroke-width="4">
+    <g stroke="red" marker-end="url(#a)">
+      <path d="m70.233 235.87 88.257.31077"/>
+      <path d="M59.046 260.11h87.947"/>
+      <path d="m46.615 282.49 87.325.9323"/>
+    </g>
+    <path fill="red" stroke="red" marker-end="url(#a)" d="m35.117 307.35 85.771-.31077"/>
+    <ellipse cx="277.14" cy="91.35" fill="none" stroke="#000" rx="34.344" ry="68.759" transform="rotate(50.196)"/>
+    <path stroke="red" d="m61.228 46.801 17.706.12469M50.959 93.317l13.362.08632M60.918 141.89l18.017.12688"/>
+  </g>
+  <g fill="none">
+    <g stroke="#ff0606" stroke-width="4" marker-end="url(#a)">
+      <path d="m35.379 424.99 86.14-.65923"/>
+      <path d="m34.72 448.06 87.019.21974"/>
+      <path d="M35.159 471.79h86.36"/>
+    </g>
+    <ellipse cx="94.49" cy="447.84" stroke="#000" stroke-width="2.5" rx="20.41" ry="41.505"/>
+    <path stroke="#ff0606" stroke-width="4" d="m89.654 235.94 18.02.0635M79.987 260.11H59.045m1.387 22.52-13.817-.14751M58.021 307.26l-17.36.0629M85.483 424.6l-15.156.116m7.902 23.454-10.549-.02664M85.7 471.79H67.461"/>
+  </g>
+  <switch><text systemLanguage="en" x="190.82312" y="182.10876">Flux is proportional to the density of flow.</text><text systemLanguage="da" x="190.82312" y="182.10876">Flux er proportionalt med fluxtæthed.</text><text x="190.82312" y="182.10876">Flux is proportional to the density of flow.</text></switch>
+  <switch><text systemLanguage="en" x="192.05327" y="357.38068">Flux varies by how the boundary faces the direction of flow.</text><text systemLanguage="da"><tspan x="192.05327" y="357.38068">Flux er afhængig af vinklen mellem fluxens retning</tspan>
+<tspan x="192.05327" y="370.38068">og arealets normal.</tspan></text><text x="192.05327" y="357.38068">Flux varies by how the boundary faces the direction of flow.</text></switch>
+  <switch><text systemLanguage="en" x="193.91788" y="535.76025">Flux is proportional to the area within the boundary.</text><text systemLanguage="da" x="193.91788" y="535.76025">Flux er proportionalt med arealets flade.</text><text x="193.91788" y="535.76025">Flux is proportional to the area within the boundary.</text></switch>
+</svg>

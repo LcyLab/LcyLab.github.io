@@ -1,6 +1,6 @@
 # LCY Lab
 
-使用 Hexo + Matery 构建的个人学习与研究笔记站点。
+使用 Hexo + Redefine 构建的个人学习与研究笔记站点。
 
 网站地址：<https://lcylab.github.io/>
 
@@ -42,6 +42,6 @@ pnpm run build
 
 ## 主题配置
 
-本地主题配置位于 `themes/matery/_config.yml`，用于本地预览。GitHub Actions 会自动下载 Matery 主题，并使用 `theme-overrides/matery/_config.yml` 覆盖主题配置后再构建。头像、首页 Banner、菜单、GitHub 链接、About 页面和项目展示都可以在覆盖配置中调整。
+主题配置位于 `_config.redefine.yml`，根配置通过 `theme: redefine` 启用 Redefine。Redefine 通过 `package.json` 固定版本并由 GitHub Actions 安装，不再依赖构建时下载 Matery。`themes/matery/` 和 `theme-overrides/matery/` 暂时保留，仅用于迁移回退；确认 Redefine 版本稳定后再考虑清理。头像、首页 Banner、菜单、GitHub 链接和页面入口都可以在 `_config.redefine.yml` 中调整。
 
-当前已启用按正式域名统计的站点 PV/UV、文章字数和阅读时长显示、首页站点概览、学习笔记导航、推荐文章和本地搜索索引。开发环境不会请求统计服务，也不会显示本地伪统计。
+当前已启用按正式域名统计的站点 PV/UV、文章浏览量、字数、阅读时长、目录、分类、标签、站内搜索和暗色模式。统计使用 Redefine 的 Vercount 接入，正式站点会累积真实数据；本地预览中的数字不代表线上统计结果。

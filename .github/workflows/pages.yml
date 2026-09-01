@@ -21,19 +21,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Fetch Matery theme
-        run: |
-          git clone --depth 1 https://github.com/blinkfox/hexo-theme-matery.git themes/matery
-          cp theme-overrides/matery/_config.yml themes/matery/_config.yml
-          rm -f themes/matery/source/medias/reward/wechat.png themes/matery/source/medias/reward/alipay.jpg
-          mkdir -p themes/matery/layout/_partial
-          cp theme-overrides/matery/layout/_partial/footer.ejs themes/matery/layout/_partial/footer.ejs
-          mkdir -p themes/matery/layout/_widget themes/matery/source/css
-          cp theme-overrides/matery/layout/layout.ejs themes/matery/layout/layout.ejs
-          cp theme-overrides/matery/layout/index.ejs themes/matery/layout/index.ejs
-          cp theme-overrides/matery/layout/_widget/site-stats.ejs themes/matery/layout/_widget/site-stats.ejs
-          cp theme-overrides/matery/source/css/my.css themes/matery/source/css/my.css
-
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
         with:
