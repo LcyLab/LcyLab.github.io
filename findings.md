@@ -66,3 +66,10 @@
 - 生产环境改用官方新版 `https://cdn.busuanzi.cc/busuanzi/3.6.9/busuanzi.min.js`，按浏览器当前页面 URL 统计，并通过兼容桥接填充 Matery 原有显示位置。
 - 直接向官方 API 以 `https://lcylab.github.io/` 作为 URL 测试，返回 `site_pv=1`、`site_uv=1`、`page_pv=1`、`page_uv=1`，未再出现 8000 多万的本地异常数字。
 - 该方案是真实访问计数服务的公开展示，不等同于审计级日志；若需要访问来源、地域、设备和趋势分析，后续应另接 Cloudflare Web Analytics 或 Umami。
+
+## 2026-08-31 文章图片与公式兼容性
+
+- Typora 打开本地 Markdown 时不能解析网页根路径 `/images/...`，因此文章图片改为相对路径 `picture/*.svg`。
+- 文章目录 `source/_drafts/计算几何基础/01 点积 叉积与法向量/` 内只保留一个 Markdown 文件和一个 `picture/` 资源目录，Typora 直接使用目录内的相对图片路径。
+- `script type="math/tex; mode=display"` 是 MathJax 2 的旧兼容写法，Typora 会把它当普通 HTML 展示；文章现已统一使用标准 `$$...$$` 公式块，并通过 `\_` 防止 Markdown 误解析下标。
+- Hexo 使用 `scripts/copy-article-pictures.js` 在构建后将文章目录下的 `picture/` 复制到对应页面目录，生成页面中的图片路径与文章资源目录一致。

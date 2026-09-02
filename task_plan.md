@@ -2,25 +2,27 @@
 
 ## 目标
 
-在不更换 Matery 主题、不加入后台服务的前提下，完善站点的访客统计、文章信息、导航和现有主题小部件，并通过本地构建和静态页面检查确认发布产物可用。
+将 LCY Lab 从 Matery 迁移到 Redefine，保留文章、分类、标签、公式、图片、搜索、真实访客统计和 GitHub Pages 部署能力，并通过本地构建和页面检查确认可发布。
 
 ## 当前阶段
 
-阶段 4：本地完善和验证完成，等待用户确认是否同步 GitHub
+阶段 6：Redefine 迁移和本地验收已完成，等待用户明确授权后同步 GitHub
 
 ## 阶段
 
-- [completed] 阶段 1：调整 Matery 配置和站点导航
-- [completed] 阶段 2：增加首页站点概览小部件和主题覆盖
-- [completed] 阶段 3：构建并检查关键页面与统计标记
-- [completed] 阶段 4：更新项目记录并准备同步 GitHub
+- [completed] 阶段 1：完成 Hexo + Matery 初始站点
+- [completed] 阶段 2：增加首页功能、统计、搜索和文章元信息
+- [completed] 阶段 3：整理第一篇计算几何草稿、图片资源和公式渲染
+- [completed] 阶段 4：迁移到 Redefine 并重做主题配置
+- [completed] 阶段 5：移除 Actions 中的 Matery 构建依赖并更新站点检查
+- [completed] 阶段 6：完成本地构建、路由、搜索、图片和 MathJax 验收
 
 ## 决策
 
-- 访客统计使用 Matery 已内置的不蒜子 PV/UV 统计，避免新增账号和服务器。
+- 访客统计使用 Redefine 接入的 Vercount PV/UV，正式域名下记录真实线上数据。
 - 文章页开启发布日期、更新时间、字数、阅读时长和单篇浏览量。
 - 保留个人资料、打赏、评论和默认社交组件关闭，避免再次出现非用户个人信息。
-- 通过 `theme-overrides/matery/` 维护 GitHub Actions 构建时需要覆盖的主题文件；本地主题目录保持同样内容以支持本地预览。
+- Redefine 配置集中在 `_config.redefine.yml`；Matery 主题和覆盖目录暂时保留，只作为迁移回退副本。
 
 ## 遇到的错误
 
@@ -29,7 +31,7 @@
 | 项目目录没有本地 Git 元数据 | 1 | 不执行本地提交操作，沿用既有 GitHub 远程同步流程 |
 | Hexo 自动加载根目录 `scripts/` 下的 PowerShell 文件 | 1 | 将检查脚本放到 `tools/`，避免被 Hexo 当作 JavaScript 加载 |
 | Windows PowerShell 5.1 误读无 BOM UTF-8 的中文断言 | 1 | 校验脚本改用 ASCII 页面标记，避免系统代码页差异 |
-| 校验脚本排除了所有 `index.html`，找不到文章页 | 1 | 按 `public/2026/.../index.html` 选择日期文章路径 |
+| 校验脚本选中了不含图片的旧文章 | 1 | 按 MathJax、文章元信息和 `picture/` 标记选择首篇文章 |
 
 ## 完成标准
 
@@ -45,3 +47,10 @@
 - 旧版不蒜子统计已不再用于页面加载。
 - 生产环境使用官方新版统计脚本；本地预览显示“正式站点统计”，不显示本地伪数据。
 - `pnpm run clean`、`pnpm run build`、`pnpm run check:site` 已在修正后重新通过。
+
+## 第一篇文章草稿
+
+- 文件：`source/_drafts/计算几何基础/01 点积 叉积与法向量/01 点积 叉积与法向量.md`
+- 标题：计算几何基础 01：点积、叉积与法向量
+- 图片：同名目录下的 `picture/` 文件夹
+- 状态：未发布、未同步 GitHub；Typora 兼容路径和本地 Hexo 草稿预览已验证。

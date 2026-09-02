@@ -7,9 +7,9 @@ info:
   url: https://lcylab.github.io
 
 defaults:
-  favicon: /images/redefine-favicon.svg
+  favicon: /images/lcy-lab-icon.png
   logo:
-  avatar: /images/redefine-avatar.svg
+  avatar: /images/lcy-lab-icon.png
 
 colors:
   primary: '#2563EB'

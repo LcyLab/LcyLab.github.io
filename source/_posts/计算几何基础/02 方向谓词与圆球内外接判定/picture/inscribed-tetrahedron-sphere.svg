@@ -1,0 +1,5 @@
+<svg width="198mm" height="209mm" version="1.1" viewBox="0 0 198 209" xmlns="http://www.w3.org/2000/svg"><rect width="198" height="209" fill="#fff"/>
+ <g fill="none" stroke-dasharray="3 1" stroke-linejoin="round"><path d="m27 152 72-139 86 135l-158 4 58-23 14-116m-14 116l100 19" stroke="#00f"/><path d="m99 13v130m-14-14 14-19 86 38m-158 4 72-42" stroke="#c0a"/><path d="m99 143-72 9" stroke="#000"/><path d="m8 143c0-19 182-19 182 0" stroke="#888"/></g>
+ <g fill="none" stroke="#000"><path d="m93 144v-6l6-1" stroke-width=".5"/><circle cx="99" cy="110" r="97"/><path d="m8 143c0 19 182 19 182 0"/></g>
+ <g fill="#00f"><circle cx="99" cy="110" r="2"/><circle cx="99" cy="143" r="2"/><circle cx="27" cy="152" r="2"/><circle cx="185" cy="148" r="2"/><circle cx="99" cy="13" r="2"/><circle cx="85" cy="129" r="2"/></g>
+ <g font-family="Times" font-size="14px" font-style="italic"><text x="171" y="162">D</text><text x="96" y="10">A</text><text x="101" y="109">O</text><text x="82" y="141">B</text><text x="101" y="147">H</text><text x="21" y="164">C</text></g></svg>

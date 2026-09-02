@@ -28,7 +28,7 @@ foreach ($relativePath in @(
 
 $siteHomeHtml = Get-Content -Raw -Encoding UTF8 $siteHomeHtmlPath
 Assert-Contains $siteHomeHtml 'hexo-theme-redefine' 'Redefine theme'
-Assert-Contains $siteHomeHtml 'redefine-favicon.svg' 'Redefine favicon'
+Assert-Contains $siteHomeHtml 'lcy-lab-icon.png' 'custom LCY Lab icon'
 Assert-Contains $siteHomeHtml 'href="/notes/"' 'learning notes navigation'
 Assert-Contains $siteHomeHtml 'busuanzi_value_site_pv' 'site pageview counter'
 Assert-Contains $siteHomeHtml 'busuanzi_value_site_uv' 'site visitor counter'
