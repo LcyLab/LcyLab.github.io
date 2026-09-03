@@ -47,7 +47,7 @@ global:
 
 home_banner:
   enable: true
-  style: fixed
+  style: static
   image:
     light: /images/wallhaven-wqery6-light.webp
     dark: /images/wallhaven-wqery6-dark.webp
@@ -206,7 +206,10 @@ footer:
     enable: false
 
 inject:
-  enable: false
+  enable: true
+  head:
+    - '<link rel="stylesheet" href="/css/lcy-banner-blur.css">'
+    - '<link rel="stylesheet" href="/css/lcy-typography.css">'
 
 plugins:
   feed:

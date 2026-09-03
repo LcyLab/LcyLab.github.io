@@ -1,0 +1,49 @@
+/*
+ * Keep a clear first-screen banner, then continue with a pre-blurred
+ * scrollable background. No fixed viewport layer or runtime CSS filter is
+ * used, so desktop scrolling stays on the normal page-paint path.
+ */
+.home-banner-container + .main-content-container {
+  background-color: var(--background-color);
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(248, 250, 252, 0.04) 0,
+      rgba(248, 250, 252, 0.14) 180px,
+      rgba(248, 250, 252, 0.14) 100%
+    ),
+    url("/images/wallhaven-wqery6-light-scroll.webp");
+  background-position: center top, center top;
+  background-repeat: no-repeat, repeat-y;
+  background-size: 100% 100%, 100% auto;
+  background-attachment: scroll, scroll;
+}
+
+html.dark .home-banner-container + .main-content-container {
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(15, 23, 42, 0.08) 0,
+      rgba(15, 23, 42, 0.2) 180px,
+      rgba(15, 23, 42, 0.2) 100%
+    ),
+    url("/images/wallhaven-wqery6-dark-scroll.webp");
+}
+
+.home-banner-container + .main-content-container .home-article-item,
+.home-banner-container + .main-content-container .sidebar-links,
+.home-banner-container + .main-content-container .sidebar-content,
+.home-banner-container + .main-content-container a.page-number,
+.home-banner-container + .main-content-container a.extend,
+.home-banner-container + .main-content-container footer.footer {
+  background-color: var(--background-color-transparent-80) !important;
+}
+
+.home-banner-container + .main-content-container .site-info,
+.home-banner-container + .main-content-container .home-article-sticky-label {
+  background-color: var(--background-color-transparent-15) !important;
+}
+
+.home-banner-container + .main-content-container .home-article-sticky-label {
+  backdrop-filter: none !important;
+}

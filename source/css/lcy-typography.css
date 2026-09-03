@@ -1,0 +1,26 @@
+/* Compact desktop typography for long technical article titles. */
+@media (min-width: 769px) {
+  .post-page-container .article-title-regular,
+  .post-page-container .article-title-cover {
+    font-size: 2.625rem !important;
+    line-height: 1.2;
+  }
+
+  .post-page-container .markdown-body h1:not(.not-markdown),
+  .post-page-container .markdown-body .h1:not(.not-markdown) {
+    font-size: 2.125rem !important;
+    line-height: 1.25 !important;
+  }
+
+  .post-page-container .markdown-body h2:not(.not-markdown),
+  .post-page-container .markdown-body .h2:not(.not-markdown) {
+    font-size: 1.875rem !important;
+    line-height: 1.25 !important;
+  }
+
+  .post-page-container .markdown-body h3:not(.not-markdown),
+  .post-page-container .markdown-body .h3:not(.not-markdown) {
+    font-size: 1.5rem !important;
+    line-height: 1.3 !important;
+  }
+}
