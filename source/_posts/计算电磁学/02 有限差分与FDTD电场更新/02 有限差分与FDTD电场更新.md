@@ -1,5 +1,5 @@
 ---
-title: 直角坐标中FDTD三维公式
+title: 计算电磁学02：直角坐标中FDTD三维公式
 date: 2026-09-02 20:00:00
 permalink: 计算电磁学/02-有限差分与FDTD电场更新/
 mathjax: true
